@@ -17,7 +17,13 @@
   getUsername --> which is a function that returns the current object's username property. *Don't use 'user' instead use the 'this' keyword*
 */
 
-//Code Here
+function User(username, email){
+  this.username = username;
+  this.email = email;
+  this.getUsername = function(){
+    return this.username;
+  };
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -37,7 +43,7 @@ function Animal(name, species, food) {
   }
 }
 
-//Code Here
+let Animal = new Animal("Jerry", "Monkry", "Banana");
 
 ////////// PROBLEM 3 //////////
 
